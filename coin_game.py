@@ -11,7 +11,7 @@ class SingleCoin(nn.Module):
     def _prob(self, result):
         if result == 1:
             return self.p
-        elif result == 0:x
+        elif result == 0:
             return 1 - self.p
         else:
             raise Exception('硬币只有正反面，参数错误')
